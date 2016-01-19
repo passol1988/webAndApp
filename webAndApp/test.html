@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>测试IOS与JS之前的互调</title>
+	<style type="text/css">
+	  * {
+	  	font-size: 40px;
+	  }
+	</style>
+  <script type="text/javascript">
+
+
+  var JSReceive = function(argument) {
+      console.log(argument);
+      OCWebview.showAlert(argument);
+  }
+  
+  </script>
+  
+</head>
+
+<body>
+  
+<div style="margin-top: 100px">
+	<h1>passol</h1>
+	<input type="button" value="判断是否登录" onclick="OCWebview.checkLogin()">
+	<input type="button" value="可以分享" onclick="OCWebview.shareEnable('1')">
+    <input type="button" value="JS给IOS传值" onclick="OCWebview.JSToOC({'name': 'testname', 'age': 10, 'height': 170})">
+    <input type="button" value="IOS给JS传值" onclick="OCWebview.OCToJS({})">
+</div>
+
+
+
+</body>
+</html>

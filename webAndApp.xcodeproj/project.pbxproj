@@ -15,6 +15,9 @@
 		57A1B2931C4D17DB00DCEB09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A1B2911C4D17DB00DCEB09 /* LaunchScreen.storyboard */; };
 		57A1B29E1C4D17DB00DCEB09 /* webAndAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A1B29D1C4D17DB00DCEB09 /* webAndAppTests.m */; };
 		57A1B2A91C4D17DB00DCEB09 /* webAndAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A1B2A81C4D17DB00DCEB09 /* webAndAppUITests.m */; };
+		57A1B2B81C4D1B7800DCEB09 /* AnoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A1B2B71C4D1B7800DCEB09 /* AnoViewController.m */; };
+		B83681D01C4E0E980043A8D1 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = B83681CF1C4E0E980043A8D1 /* test.html */; };
+		B83681D21C4E0ED50043A8D1 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83681D11C4E0ED50043A8D1 /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		57A1B2A41C4D17DB00DCEB09 /* webAndAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = webAndAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57A1B2A81C4D17DB00DCEB09 /* webAndAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = webAndAppUITests.m; sourceTree = "<group>"; };
 		57A1B2AA1C4D17DB00DCEB09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57A1B2B61C4D1B7800DCEB09 /* AnoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnoViewController.h; sourceTree = "<group>"; };
+		57A1B2B71C4D1B7800DCEB09 /* AnoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnoViewController.m; sourceTree = "<group>"; };
+		B83681CF1C4E0E980043A8D1 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		B83681D11C4E0ED50043A8D1 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83681D21C4E0ED50043A8D1 /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +89,7 @@
 		57A1B2771C4D17DB00DCEB09 = {
 			isa = PBXGroup;
 			children = (
+				B83681D11C4E0ED50043A8D1 /* JavaScriptCore.framework */,
 				57A1B2821C4D17DB00DCEB09 /* webAndApp */,
 				57A1B29C1C4D17DB00DCEB09 /* webAndAppTests */,
 				57A1B2A71C4D17DB00DCEB09 /* webAndAppUITests */,
@@ -101,10 +110,13 @@
 		57A1B2821C4D17DB00DCEB09 /* webAndApp */ = {
 			isa = PBXGroup;
 			children = (
+				B83681CF1C4E0E980043A8D1 /* test.html */,
 				57A1B2861C4D17DB00DCEB09 /* AppDelegate.h */,
 				57A1B2871C4D17DB00DCEB09 /* AppDelegate.m */,
 				57A1B2891C4D17DB00DCEB09 /* ViewController.h */,
 				57A1B28A1C4D17DB00DCEB09 /* ViewController.m */,
+				57A1B2B61C4D1B7800DCEB09 /* AnoViewController.h */,
+				57A1B2B71C4D1B7800DCEB09 /* AnoViewController.m */,
 				57A1B28C1C4D17DB00DCEB09 /* Main.storyboard */,
 				57A1B28F1C4D17DB00DCEB09 /* Assets.xcassets */,
 				57A1B2911C4D17DB00DCEB09 /* LaunchScreen.storyboard */,
@@ -243,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83681D01C4E0E980043A8D1 /* test.html in Resources */,
 				57A1B2931C4D17DB00DCEB09 /* LaunchScreen.storyboard in Resources */,
 				57A1B2901C4D17DB00DCEB09 /* Assets.xcassets in Resources */,
 				57A1B28E1C4D17DB00DCEB09 /* Main.storyboard in Resources */,
@@ -273,6 +286,7 @@
 				57A1B28B1C4D17DB00DCEB09 /* ViewController.m in Sources */,
 				57A1B2881C4D17DB00DCEB09 /* AppDelegate.m in Sources */,
 				57A1B2851C4D17DB00DCEB09 /* main.m in Sources */,
+				57A1B2B81C4D1B7800DCEB09 /* AnoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +512,7 @@
 				57A1B2AF1C4D17DB00DCEB09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57A1B2B01C4D17DB00DCEB09 /* Build configuration list for PBXNativeTarget "webAndAppTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +521,7 @@
 				57A1B2B21C4D17DB00DCEB09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57A1B2B31C4D17DB00DCEB09 /* Build configuration list for PBXNativeTarget "webAndAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +530,7 @@
 				57A1B2B51C4D17DB00DCEB09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

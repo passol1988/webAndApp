@@ -7,8 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <JavaScriptCore/JavaScriptCore.h>
 
-@interface ViewController : UIViewController
+
+@protocol WebviewProtocol <JSExport>
+
+- (BOOL)checkLogin;
+- (void)shareEnable:(NSString *)enable;
+
+- (void)JSToOC:(NSDictionary *)params;
+- (void)OCToJS:(NSDictionary *)params;
+- (void)showAlert:(NSDictionary *)params;
+
+@end
+@interface ViewController : UIViewController<WebviewProtocol>
 
 
 @end
